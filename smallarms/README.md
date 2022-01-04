@@ -6,7 +6,7 @@ This doesn't *fully* unpack them, it merely automatically extracts the archive o
 ## Requirements
 * 7-Zip
   * [Windows](https://www.7-zip.org)
-    * If not installed in the default location (%ProgramFiles%\7-Zip) you will prompted to input the path.
+    * If not installed in the default directory (`%ProgramFiles%\7-Zip`) you will be prompted to input the path.
   * Linux (Ubuntu)
     * `sudo apt-get update && sudo apt-get install p7zip-full`
 * Bash version 4 or later
@@ -17,7 +17,7 @@ This doesn't *fully* unpack them, it merely automatically extracts the archive o
 # Example:
 ./smallarms.sh extract data/game.gbd
 ```
-If ran without extra parameters you will asked what to do.
+If ran without parameters you will be asked what to do and/or which file to extract/repack.
 
 ## Files:
 
