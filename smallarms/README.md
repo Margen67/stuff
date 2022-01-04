@@ -198,7 +198,7 @@ Gastronaut shader<sup>?</sup>
 https://en.wikipedia.org/wiki/Lua_(programming_language)
 
 ### mpk
-Unknown.
+Unknown. Unrelated to http://wiki.xentax.com/index.php/Terminator_Dawn_Of_Fate_MPK.
 
 ### png
 https://en.wikipedia.org/wiki/Portable_Network_Graphics
@@ -218,8 +218,12 @@ https://en.wikipedia.org/wiki/XML
 ### xsb
 https://wiki.xentax.com/index.php/XBOX_XSB
 
+Can be played/converted with [vgmstream](https://github.com/vgmstream/vgmstream).
+
 ### xwb
 https://wiki.xentax.com/index.php/XBOX_XWB3
+
+Can be played/converted with [vgmstream](https://github.com/vgmstream/vgmstream).
 
 ## Additional information
 * IGS 2007: Jacob Van Wingen, Don Wurster - 'Postmortem: Small Arms'
