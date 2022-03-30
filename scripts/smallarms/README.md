@@ -13,6 +13,7 @@ This doesn't *fully* unpack them, it merely automatically extracts the archive o
 
 ## Usage
 ```sh
+#chmod +x smallarms.sh
 ./smallarms.sh [e]xtract/[r]ezip file
 # Example:
 ./smallarms.sh extract data/game.gbd
@@ -55,33 +56,33 @@ If ran without parameters you will be asked what to do and/or which file to extr
     * `game.gbd`
     * `init.gbd`
     * `/characters/`
-      File name       | Character name
-      ---------       | --------------
-      `boss.gbd`      | Ivar/Gullarp<sup>?</sup>
-      `dino.gbd`      | Tyrone
-      `empty.gbd`     | Unused<sup>?</sup>
-      `essie.gbd`     | Ivar/Gullarp<sup>?</sup>
-      `knight.gbd`    | Lord Peet
-      `log.gbd`       | Billy Ray Logg
-      `marine.gbd`    | Unit 51
-      `marky.gbd`     | Marky Kat
-      `mouse.gbd`     | Mousey McNuts
-      `professor.gbd` | Professor Von Brown
-      `robot.gbd`     | ISO-7982
-      `rooster.gbd`   | Pector El Pollo
-      `truffles.gbd`  | Mr. Truffles
-      `zoe.gbd`       | Zöe
+      File name          | Character name
+      ---------          | --------------
+      `boss.gbd`         | Ivar/Gullarp<sup>?</sup>
+      `dino.gbd`         | Tyrone
+      `empty.gbd`        | Unused<sup>?</sup>
+      `essie.gbd`        | Ivar/Gullarp<sup>?</sup>
+      `knight.gbd`       | Lord Peet
+      `log.gbd`          | Billy Ray Logg
+      `marine.gbd`       | Unit 51
+      `marky.gbd`        | Marky Kat
+      `mouse.gbd`        | Mousey McNuts
+      `professor.gbd`    | Professor Von Brown
+      `robot.gbd`        | ISO-7982
+      `rooster.gbd`      | Pector El Pollo
+      `truffles.gbd`     | Mr. Truffles
+      `zoe.gbd`          | Zöe
   * `/lang/`
-    File name       | Language
-    ---------       | --------
-    `cn.gbd`        | Chinese
-    `de.gbd`        | Deutsch <sup>German</sup>
-    `en.gbd`        | English 
-    `es.gbd`        | Español <sup>Spanish</sup>
-    `fr.gbd`        | French 
-    `it.gbd`        | Italian 
-    `jp.gbd`        | Japanese
-    `kr.gbd`        | Korean
+    File name            | Language
+    ---------            | --------
+    `cn.gbd`             | Chinese
+    `de.gbd`             | Deutsch <sup>German</sup>
+    `en.gbd`             | English
+    `es.gbd`             | Español <sup>Spanish</sup>
+    `fr.gbd`             | French
+    `it.gbd`             | Italian
+    `jp.gbd`             | Japanese
+    `kr.gbd`             | Korean
   * `/levels/`
     File name            | Level name
     ---------            | ----------
@@ -162,26 +163,26 @@ Bytes (Hex) | File (/data/)
 ***67 64 62 64*** *00 00 00* **02** *00 00 00 20 00 00* **00 0E** *00 00 00* **1C** *00 00 00 01* **00 2E AA 43** | levels/volcano.gbd
 ***67 64 62 64*** *00 00 00* **02** *00 00 00 20 00 00* **00 09** *00 00 00* **1C** *00 00 00 01* **00 31 7A B4** | levels/waterfall.gbd
 
-Type                          | Amount | Description
-----                          | ------ | -----------
-Char                          | 4      | Header `gdbd`
-Byte                          | 3      | Unknown
-Int8<sup>?</sup>              |        | Version<sup>?</sup>
-Byte                          | 6      | Unknown
-Int16, Big Endian<sup>?</sup> |        | Number of files<sup>?</sup>
-Byte                          | 3      | Unknown
-Int8<sup>?</sup>              |        | Header Size<sup>?</sup>
-Int32<sup>?</sup>             |        | Unknown
-Int32, Big Endian<sup>?</sup> |        | Uncompressed Size
+Type                           | Amount | Description
+----                           | ------ | -----------
+Char                           | 4      | Header `gdbd`
+Byte                           | 3      | Unknown
+Int8<sup>?</sup>               |        | Version<sup>?</sup>
+Byte                           | 6      | Unknown
+Int16, Big Endian<sup>?</sup>  |        | Number of files<sup>?</sup>
+Byte                           | 3      | Unknown
+Int8<sup>?</sup>               |        | Header Size<sup>?</sup>
+Int32<sup>?</sup>              |        | Unknown
+Int32, Big Endian<sup>?</sup>  |        | Uncompressed Size
 
 * Version varies per game:
 
-  Version   | Game             | Year
-  -------   | ----             | ----
-  3         | Gel: Set & Match | 2009
-  ?         | Elemental        | 2007
-  2         | Small Arms       | 2006
-  ?<!--1--> | Fuzzee Fever     | 2004
+  Version | Game             | Year
+  ------- | ----             | ----
+  3       | Gel: Set & Match | 2009
+  ?       | Elemental        | 2007
+  2       | Small Arms       | 2006
+  1?      | Fuzzee Fever     | 2004
 
   gbd version 3 (Gel) cannot be opened in 7-Zip.
 
@@ -208,7 +209,7 @@ https://en.wikipedia.org/wiki/Portable_Network_Graphics
 
 ### xgs
 Unknown. Also used by:
-  * [FEZ](https://github.com/fesh0r/fez-unpack/blob/master/fez_unpack.py#L33) 
+  * [FEZ](https://github.com/fesh0r/fez-unpack/blob/master/fez_unpack.py#L33)
   * [007 Goldeneye](https://wiki.xentax.com/index.php/List_of_games_with_unknown_file_formats)
   * *Maybe other (Xbox 360) games?*
 
