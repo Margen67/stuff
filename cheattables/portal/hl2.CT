@@ -161,6 +161,28 @@
       </After>
     </CodeEntry>
     <CodeEntry>
+      <Description>Crouch after jumping (replace with nothing for always, jmp for never)</Description>
+      <AddressString>server.dll+18B87A</AddressString>
+      <Before>
+        <Byte>5F</Byte>
+        <Byte>83</Byte>
+        <Byte>78</Byte>
+        <Byte>14</Byte>
+        <Byte>01</Byte>
+      </Before>
+      <Actual>
+        <Byte>75</Byte>
+        <Byte>2F</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>4E</Byte>
+        <Byte>04</Byte>
+        <Byte>8D</Byte>
+        <Byte>45</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
       <Description>1 axis speed cap (nop for OE BHop on 1 axis)</Description>
       <AddressString>server.dll+18B7A3</AddressString>
       <Before>
