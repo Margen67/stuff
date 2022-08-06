@@ -230,3 +230,5 @@ Can be played/converted with [vgmstream](https://github.com/vgmstream/vgmstream)
 * IGS 2007: Jacob Van Wingen, Don Wurster - 'Postmortem: Small Arms'
   * [archive.org](https://archive.org/details/igs-2007-small-arms-postmortem)
   * [YouTube](https://youtu.be/GwNT0a9iaxc)
+  * [pdf](https://ubm-twvideo01.s3.amazonaws.com/o1/vault/gdc07/slides/S3845i1.pdf)
+    * [Archive](https://web.archive.org/web/20220806063741/https://ubm-twvideo01.s3.amazonaws.com/o1/vault/gdc07/slides/S3845i1.pdf)
