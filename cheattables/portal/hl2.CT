@@ -93,6 +93,23 @@
         <Offset>10</Offset>
       </Offsets>
     </CheatEntry>
+    <CheatEntry>
+      <ID>28</ID>
+      <Description>"Weapon select without suit (set to 0411, 0431 default)"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>client.dll+507778</Address>
+      <Offsets>
+        <Offset>C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>33</ID>
+      <Description>"Max +use weight"</Description>
+      <VariableType>Float</VariableType>
+      <Address>server.dll+5CFA58</Address>
+    </CheatEntry>
   </CheatEntries>
   <CheatCodes>
     <CodeEntry>
@@ -714,6 +731,28 @@
         <Byte>11</Byte>
         <Byte>86</Byte>
         <Byte>68</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Pick up heavy objects (replace with nothing)</Description>
+      <AddressString>server.dll+43C6BA</AddressString>
+      <Before>
+        <Byte>83</Byte>
+        <Byte>C4</Byte>
+        <Byte>0C</Byte>
+        <Byte>84</Byte>
+        <Byte>C0</Byte>
+      </Before>
+      <Actual>
+        <Byte>EB</Byte>
+        <Byte>15</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>CE</Byte>
+        <Byte>E8</Byte>
+        <Byte>4D</Byte>
+        <Byte>07</Byte>
       </After>
     </CodeEntry>
   </CheatCodes>
